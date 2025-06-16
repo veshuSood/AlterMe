@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:textAlignment="center"
+    android:textDirection="firstStrongRtl"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/QueHead"
+        android:layout_width="219dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/secondary"
+        android:fontFamily="sans-serif"
+        android:text="Questions"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textPrimary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/QNo"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="92dp"
+        android:background="@color/secondary"
+
+        android:text="QNo 1"
+        android:textAlignment="center"
+        android:textColor="@color/textPrimary"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/Question"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QueHead"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="277dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="66dp"
+        android:background="@color/secondary"
+        android:backgroundTint="@color/secondary"
+        android:fadingEdge="horizontal"
+        android:text="How do you usually react in stressful situations?"
+        android:textAlignment="center"
+        android:textColor="@color/textPrimary"
+        android:textSize="24dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/QueHead"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="376dp"
+
+        android:layout_height="302dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645">
+
+        <RadioButton
+            android:id="@+id/opt1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/secondary"
+            android:text="Stay calm and analyze it"
+
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/opt2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/secondary"
+            android:text="Get anxious but try to manage"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/opt3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/secondary"
+            android:text="Avoid or escape the situation"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/textPrimary"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="316dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        android:progressDrawable="@drawable/progress_drawable"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

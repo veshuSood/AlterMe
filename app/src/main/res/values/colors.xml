@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#4FD1C5</color> <!-- Teal -->
+    <color name="secondary">#F6AD55</color> <!-- Peach -->
+    <color name="background">#FFFFE4</color>
+    <color name="textPrimary">#1A202C</color>
+
+    <color name="primaryLight">#BB86FC</color>
+
+    \
+
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/quizBtn"
+        android:layout_width="186dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="383dp"
+        android:backgroundTint="@color/secondary"
+        android:text="Let's go for quiz"
+        android:textColor="@color/textPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="404dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="57dp"
+        android:text="Welcome To AlterMe"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textStyle="bold"
+        android:textColor="@color/textPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/quizBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
